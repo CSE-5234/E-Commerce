@@ -1,4 +1,4 @@
-# E-Commerce Snacks
+# Snack Shop
 
 A simple e-commerce web application built with React for CSE 5234.
 
@@ -8,3 +8,6 @@ A simple e-commerce web application built with React for CSE 5234.
 npm install
 npm start
 ```
+
+## Tools:
+React Bootstrap: https://react-bootstrap.netlify.app/ 
