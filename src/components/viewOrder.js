@@ -11,6 +11,8 @@ function ViewOrder() {
     shippingInfo: {},
   };
 
+	console.log(paymentInfo);
+
   const handleConfirm = () => {
     navigate("/purchase/viewConfirmation", {
       state: { cartItems, paymentInfo, shippingInfo },
@@ -47,8 +49,8 @@ function ViewOrder() {
         <Card.Body>
           {paymentInfo && (
             <>
-              <p><strong>Cardholder Name:</strong> {paymentInfo.cardName}</p>
-              <p><strong>Card Number:</strong> **** **** **** {paymentInfo.last4}</p>
+              <p><strong>Cardholder Name:</strong> {paymentInfo.cardHolderName}</p>
+              <p><strong>Card Number:</strong> **** **** **** {paymentInfo.cardNumber.slice(-4)}</p>
               <p><strong>Expiry:</strong> {paymentInfo.expirationDate}</p>
             </>
           )}
