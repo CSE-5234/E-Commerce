@@ -49,7 +49,7 @@ function ViewOrder() {
             <>
               <p><strong>Cardholder Name:</strong> {paymentInfo.cardName}</p>
               <p><strong>Card Number:</strong> **** **** **** {paymentInfo.last4}</p>
-              <p><strong>Expiry:</strong> {paymentInfo.expiry}</p>
+              <p><strong>Expiry:</strong> {paymentInfo.expirationDate}</p>
             </>
           )}
         </Card.Body>
@@ -107,10 +107,10 @@ function ViewOrder() {
           className="me-3"
           onClick={() => navigate(-1)}
         >
-          ← Edit Shipping
+          Edit Shipping
         </Button>
         <Button variant="success" size="lg" onClick={handleConfirm}>
-          Confirm Order ✓
+          Confirm Order
         </Button>
       </div>
     </Container>
