@@ -75,10 +75,11 @@ function Confirmation() {
         <Card.Header as="h5">Ship To</Card.Header>
         <Card.Body>
           <p><strong>Name:</strong> {shippingInfo.name}</p>
-          <p><strong>Address:</strong> {shippingInfo.addressLine1}</p>
-          {shippingInfo.addressLine2 && <p>{shippingInfo.addressLine2}</p>}
-          <p style={{ marginLeft: "68px" }}>
-            {shippingInfo.city}, {shippingInfo.state} {shippingInfo.zip}
+          <p>
+            <strong>Address:</strong>{" "}
+            {shippingInfo.addressLine1}
+            {shippingInfo.addressLine2 ? `, ${shippingInfo.addressLine2}` : ""}
+            {`, ${shippingInfo.city}, ${shippingInfo.state} ${shippingInfo.zip}`}
           </p>
 
         </Card.Body>
