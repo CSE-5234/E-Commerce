@@ -1,35 +1,174 @@
-import React from 'react';
 import './aboutUs.css';
 
 function AboutUs() {
     const executives = [
         {
-            name: 'Samantha Lee',
-            title: 'Chief Technology Officer',
-            image: '/images/sam.jpg', // ← your existing image path
-            description:
-                'A former senior engineer at a Fortune 500 company, Samantha specializes in scalable web architecture and AI-driven personalization. She’s dedicated to building technology that empowers customers worldwide.',
+            name: 'Sam Wang',
+            title: 'Head Chef',
+            image: '/images/sam.jpg',
+            description: (
+                <>
+                    <h5>Education</h5>
+                    <p>
+                        Graduated top of class in Culinary Science & Food
+                        Innovation — refined pastry technique meets data-driven
+                        flavor design.
+                    </p>
+
+                    <h5>Experience</h5>
+                    <ul>
+                        <li>
+                            Founded and scaled{' '}
+                            <strong>The Snack Shop Co.</strong>, launching 12
+                            signature bars and 7 seasonal cookie flavors —
+                            averaging 5,000+ units sold monthly.
+                        </li>
+                        <li>
+                            Head pastry chef for pop-up dessert experiences
+                            (500+ guests per event), with viral social media
+                            features and wholesale deals for local cafés.
+                        </li>
+                        <li>
+                            Built a hit line of gourmet pretzels & caramel
+                            popcorn that doubled repeat purchase rates through
+                            clever flavor layering and packaging UX.
+                        </li>
+                    </ul>
+
+                    <h5>Passion</h5>
+                    <p>
+                        I obsess over texture math, flavor symmetry, and
+                        repeatable processes — turning bold concepts into snacks
+                        that hit emotionally and sell reliably.
+                    </p>
+                </>
+            ),
         },
         {
-            name: 'Samantha Lee',
-            title: 'Chief Technology Officer',
-            image: '/images/sam.jpg', // ← your existing image path
-            description:
-                'A former senior engineer at a Fortune 500 company, Samantha specializes in scalable web architecture and AI-driven personalization. She’s dedicated to building technology that empowers customers worldwide.',
+            name: 'Sam Wang',
+            title: 'Head Chef',
+            image: '/images/sam.jpg',
+            description: (
+                <>
+                    <h5>Education</h5>
+                    <p>
+                        Graduated top of class in Culinary Science & Food
+                        Innovation — refined pastry technique meets data-driven
+                        flavor design.
+                    </p>
+
+                    <h5>Experience</h5>
+                    <ul>
+                        <li>
+                            Founded and scaled{' '}
+                            <strong>The Snack Shop Co.</strong>, launching 12
+                            signature bars and 7 seasonal cookie flavors —
+                            averaging 5,000+ units sold monthly.
+                        </li>
+                        <li>
+                            Head pastry chef for pop-up dessert experiences
+                            (500+ guests per event), with viral social media
+                            features and wholesale deals for local cafés.
+                        </li>
+                        <li>
+                            Built a hit line of gourmet pretzels & caramel
+                            popcorn that doubled repeat purchase rates through
+                            clever flavor layering and packaging UX.
+                        </li>
+                    </ul>
+
+                    <h5>Passion</h5>
+                    <p>
+                        I obsess over texture math, flavor symmetry, and
+                        repeatable processes — turning bold concepts into snacks
+                        that hit emotionally and sell reliably.
+                    </p>
+                </>
+            ),
         },
         {
-            name: 'Samantha Lee',
-            title: 'Chief Technology Officer',
-            image: '/images/sam.jpg', // ← your existing image path
-            description:
-                'A former senior engineer at a Fortune 500 company, Samantha specializes in scalable web architecture and AI-driven personalization. She’s dedicated to building technology that empowers customers worldwide.',
+            name: 'Sam Wang',
+            title: 'Head Chef',
+            image: '/images/sam.jpg',
+            description: (
+                <>
+                    <h5>Education</h5>
+                    <p>
+                        Graduated top of class in Culinary Science & Food
+                        Innovation — refined pastry technique meets data-driven
+                        flavor design.
+                    </p>
+
+                    <h5>Experience</h5>
+                    <ul>
+                        <li>
+                            Founded and scaled{' '}
+                            <strong>The Snack Shop Co.</strong>, launching 12
+                            signature bars and 7 seasonal cookie flavors —
+                            averaging 5,000+ units sold monthly.
+                        </li>
+                        <li>
+                            Head pastry chef for pop-up dessert experiences
+                            (500+ guests per event), with viral social media
+                            features and wholesale deals for local cafés.
+                        </li>
+                        <li>
+                            Built a hit line of gourmet pretzels & caramel
+                            popcorn that doubled repeat purchase rates through
+                            clever flavor layering and packaging UX.
+                        </li>
+                    </ul>
+
+                    <h5>Passion</h5>
+                    <p>
+                        I obsess over texture math, flavor symmetry, and
+                        repeatable processes — turning bold concepts into snacks
+                        that hit emotionally and sell reliably.
+                    </p>
+                </>
+            ),
         },
         {
-            name: 'Samantha Lee',
-            title: 'Chief Technology Officer',
-            image: '/images/sam.jpg', // ← your existing image path
-            description:
-                'A former senior engineer at a Fortune 500 company, Samantha specializes in scalable web architecture and AI-driven personalization. She’s dedicated to building technology that empowers customers worldwide.',
+            name: 'Sam Wang',
+            title: 'Head Chef',
+            image: '/images/sam.jpg',
+            description: (
+                <>
+                    <h5>Education</h5>
+                    <p>
+                        Graduated top of class in Culinary Science & Food
+                        Innovation — refined pastry technique meets data-driven
+                        flavor design.
+                    </p>
+
+                    <h5>Experience</h5>
+                    <ul>
+                        <li>
+                            Founded and scaled{' '}
+                            <strong>The Snack Shop Co.</strong>, launching 12
+                            signature bars and 7 seasonal cookie flavors —
+                            averaging 5,000+ units sold monthly.
+                        </li>
+                        <li>
+                            Head pastry chef for pop-up dessert experiences
+                            (500+ guests per event), with viral social media
+                            features and wholesale deals for local cafés.
+                        </li>
+                        <li>
+                            Built a hit line of gourmet pretzels & caramel
+                            popcorn that doubled repeat purchase rates through
+                            clever flavor layering and packaging UX.
+                        </li>
+                    </ul>
+
+                    <h5>Passion</h5>
+                    <p>
+                        I obsess over texture math, flavor symmetry, and
+                        repeatable processes — turning bold concepts into snacks
+                        that hit emotionally and sell reliably.
+                    </p>
+                </>
+            ),
         },
     ];
 
@@ -38,60 +177,61 @@ function AboutUs() {
             <section className="about-intro">
                 <h1>About Us</h1>
                 <p>
-                    At <strong>NextGen Retail</strong>, we believe shopping
-                    should be seamless, smart, and personal. Since our founding,
-                    we’ve combined innovation, design, and data to deliver a
-                    world-class e-commerce experience.
+                    At <strong>The Snack Shop Co.</strong>, we create
+                    innovative, high-quality snacks that delight customers and
+                    inspire repeat enjoyment.
                 </p>
             </section>
 
             <section className="about-mission-vision">
-                <h2>Our Mission</h2>
-                <p>
-                    To revolutionize the online retail experience by connecting
-                    customers with products they love through technology, trust,
-                    and transparency.
-                </p>
-
-                <h2>Our Vision</h2>
-                <p>
-                    To become a global leader in intelligent commerce — where
-                    innovation meets purpose and every purchase drives progress.
-                </p>
-            </section>
-
-            <section className="about-strategy">
-                <h2>Our Strategy</h2>
-                <p>
-                    Our strategy is centered on three pillars: innovation,
-                    sustainability, and customer excellence. By leveraging
-                    AI-driven insights, partnering with ethical suppliers, and
-                    investing in cutting-edge logistics, we ensure that every
-                    step of our business supports long-term growth and social
-                    impact.
-                </p>
+                <div className="info-block">
+                    <h2>Mission</h2>
+                    <p>
+                        Craft innovative snacks that delight customers and drive
+                        sustainable growth.
+                    </p>
+                </div>
+                <div className="info-block">
+                    <h2>Vision</h2>
+                    <p>
+                        Become a leading snack brand known for bold flavors,
+                        innovation, and memorable experiences.
+                    </p>
+                </div>
+                <div className="info-block">
+                    <h2>Strategy</h2>
+                    <p>
+                        Innovate flavors, delight customers, scale operations
+                        efficiently, and expand brand reach via retail and
+                        e-commerce.
+                    </p>
+                </div>
             </section>
 
             <section className="about-executives">
                 <h2>Meet Our Executives</h2>
-                <div className="executive-grid">
-                    {executives.map((exec, index) => (
-                        <div key={index} className="executive-card">
+                {executives.map((exec, index) => (
+                    <div key={index} className="executive-profile">
+                        <div className="exec-photo-container">
                             <img
                                 src={exec.image}
                                 alt={exec.name}
-                                className="executive-photo"
+                                className="executive-photo-large"
                                 onError={(e) =>
                                     (e.target.src =
-                                        'https://via.placeholder.com/150')
+                                        'https://via.placeholder.com/200')
                                 }
                             />
+                        </div>
+                        <div className="exec-info">
                             <h3>{exec.name}</h3>
                             <h4>{exec.title}</h4>
-                            <p>{exec.description}</p>
+                            <div className="exec-description">
+                                {exec.description}
+                            </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </section>
         </div>
     );
