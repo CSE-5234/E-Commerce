@@ -5,24 +5,46 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Purchase from "./components/purchase";
-import PaymentEntry from "./components/paymentEntry";
-import ShippingEntry from "./components/shippingEntry";
-import ViewOrder from "./components/viewOrder";
-import Confirmation from "./components/confirmation";
+
+// --- existing Lab 5 pages ---
+import Purchase from "./components/shop/purchase";
+import PaymentEntry from "./components/shop/paymentEntry";
+import ShippingEntry from "./components/shop/shippingEntry";
+import ViewOrder from "./components/shop/viewOrder";
+import Confirmation from "./components/shop/confirmation";
+
+// --- new Lab 6 UI components ---
+import Navbar from "./components/navBar";
+import Footer from "./components/footer";
+import Home from "./components/home";
+import "./styles.css";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/purchase" element={<Purchase />} />
-          <Route path="/" element={<Navigate to="/purchase" />} />
-          <Route path="/purchase/paymentEntry" element={<PaymentEntry />} />
-          <Route path="/purchase/shippingEntry" element={<ShippingEntry />} />
-          <Route path="/purchase/viewOrder" element={<ViewOrder />} />
-          <Route path="/purchase/viewConfirmation" element={<Confirmation />} />
-        </Routes>
+      <div className="app-root">
+        {/* consistent navigation bar at top */}
+        <Navbar />
+
+        <main className="page-content">
+          <Routes>
+            {/* Home page with carousel */}
+            <Route path="/" element={<Home />} />
+
+            {/* Existing Lab 5 purchase flow */}
+            <Route path="/purchase" element={<Purchase />} />
+            <Route path="/purchase/paymentEntry" element={<PaymentEntry />} />
+            <Route path="/purchase/shippingEntry" element={<ShippingEntry />} />
+            <Route path="/purchase/viewOrder" element={<ViewOrder />} />
+            <Route path="/purchase/viewConfirmation" element={<Confirmation />} />
+
+            {/* Optional redirect for unknown routes */}
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </main>
+
+        {/* consistent footer at bottom */}
+        <Footer />
       </div>
     </Router>
   );
