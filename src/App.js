@@ -17,6 +17,7 @@ import Confirmation from "./components/shop/confirmation";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
 import Home from "./components/home";
+import AboutUs from "./components/AboutUs"; // ← added
 import "./styles.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             {/* Home page with carousel */}
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} /> {/* ← added */}
 
             {/* Existing Lab 5 purchase flow */}
             <Route path="/purchase" element={<Purchase />} />

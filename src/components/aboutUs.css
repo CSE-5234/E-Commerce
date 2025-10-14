@@ -1,0 +1,70 @@
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-intro h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-mission-vision,
+.about-strategy,
+.about-executives {
+    margin-top: 2.5rem;
+}
+
+.about-mission-vision h2,
+.about-strategy h2,
+.about-executives h2 {
+    font-size: 1.8rem;
+    color: #0a3d62;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.executive-card {
+    text-align: center;
+    background: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.executive-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.executive-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #0a3d62;
+}
+
+.executive-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.executive-card h4 {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
