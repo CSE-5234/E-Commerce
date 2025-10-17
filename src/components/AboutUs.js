@@ -1,4 +1,4 @@
-import "./aboutUs.css";
+import "./styling/aboutUs.css";
 
 function AboutUs() {
   const executives = [
