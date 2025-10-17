@@ -19,6 +19,7 @@ import Footer from "./components/footer";
 import Home from "./components/home";
 import AboutUs from "./components/AboutUs"; // ← added
 import "./styles.css";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             {/* Home page with carousel */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} /> {/* ← added */}
+            <Route path="/contact" element={<ContactUs/>} />
 
             {/* Existing Lab 5 purchase flow */}
             <Route path="/purchase" element={<Purchase />} />

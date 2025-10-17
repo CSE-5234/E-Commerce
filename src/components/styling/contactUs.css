@@ -1,0 +1,79 @@
+/* ---------- Container ---------- */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+  min-height: 60vh;
+}
+
+/* ---------- Page Header ---------- */
+.contact-intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a3d62;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-intro p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ---------- Info Cards Grid ---------- */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h3 {
+  color: #0a3d62;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #0a3d62;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.info-card p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .contact-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
