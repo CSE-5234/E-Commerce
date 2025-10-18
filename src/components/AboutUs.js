@@ -59,10 +59,10 @@ function AboutUs() {
           <h5>Experience</h5>
           <ul>
             <li>
-              Before founding this snack shop, I worked as a
+              Before founding this snack shop, I worked as a 
               <strong>
                 Professional Taste Tester, Microwave Popcorn Technician, and
-                Cereal Mixologist.
+                Cereal Mixologist. 
               </strong>
               I spent years mastering the delicate craft of opening snack bags
               in total silence — a skill invaluable during late-night Netflix
@@ -93,41 +93,32 @@ function AboutUs() {
       ),
     },
     {
-      name: "Sam Wang",
-      title: "Head Chef",
-      image: "/images/sam.jpg",
+      name: "Jessica Yang",
+      title: "Assistant Chef",
+      image: "/images/stock.jpg",
       description: (
         <>
           <h5>Education</h5>
           <p>
-            Graduated top of class in Culinary Science & Food Innovation —
-            refined pastry technique meets data-driven flavor design.
+            Graduated from the Culinary Institute of Tasty Treats with a concentration in snack innovation and kitchen management. Trained under industry professionals in small-batch production and flavor balancing, earning top marks in creative recipe development.
           </p>
 
           <h5>Experience</h5>
           <ul>
             <li>
-              Founded and scaled <strong>The Snack Shop Co.</strong>, launching
-              12 signature bars and 7 seasonal cookie flavors — averaging 5,000+
-              units sold monthly.
+              <strong>Assistant Chef</strong>, The Snack Shop Co. (2022–Present): Assist in developing new snack recipes, manage daily prep operations, and ensure every treat meets flavor standards.
             </li>
             <li>
-              Head pastry chef for pop-up dessert experiences (500+ guests per
-              event), with viral social media features and wholesale deals for
-              local cafés.
+              <strong>Junior Flavor Developer</strong>, MunchLab Snacks (2020–2022): Conducted taste tests and data tracking for 30+ new product trials. Helped launch the fan-favorite “Spicy Stardust Popcorn,” which boosted seasonal sales by 40%.
             </li>
             <li>
-              Built a hit line of gourmet pretzels & caramel popcorn that
-              doubled repeat purchase rates through clever flavor layering and
-              packaging UX.
+              <strong>Kitchen Staff</strong>, BiteRight Bakery (2020): Assisted in daily baking operations and quality checks. Learned production scaling for small-batch cookies and snack bars while maintaining consistent flavor profiles.
             </li>
           </ul>
 
           <h5>Passion</h5>
           <p>
-            I obsess over texture math, flavor symmetry, and repeatable
-            processes — turning bold concepts into snacks that hit emotionally
-            and sell reliably.
+            I thrive in fast-paced kitchens, where creativity meets precision. My passion lies in supporting the craft behind each snack, from mixing and tasting to refining the final product.
           </p>
         </>
       ),
