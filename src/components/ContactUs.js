@@ -1,6 +1,36 @@
+import { useState } from "react";
 import "./styling/contactUs.css";
 
 function ContactUs() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "Do you offer international shipping?",
+      answer:
+        "Currently, we only ship within the United States, but we’re working on expanding to new regions soon!",
+    },
+    {
+      question: "Can I return or exchange a snack?",
+      answer:
+        "Due to the nature of our products, we’re unable to accept returns. However, if your order arrived damaged or incorrect, contact us and we’ll make it right.",
+    },
+    {
+      question: "How long does delivery take?",
+      answer:
+        "Orders are typically processed within 1–2 business days and arrive within 3–5 business days via standard shipping.",
+    },
+    {
+      question: "Do you offer bulk or corporate orders?",
+      answer:
+        "Yes! For large orders or corporate gifting, email hello@snackshop.com for custom options and discounts.",
+    },
+  ];
+
   return (
     <div className="contact-container">
       <section className="contact-intro">
@@ -37,6 +67,21 @@ function ContactUs() {
           <p>Sunday: Closed</p>
         </div>
       </div>
+
+      {/* Collapsible FAQ Section */}
+      <section className="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className={`faq-item ${openIndex === index ? "open" : ""}`}
+            onClick={() => toggleFAQ(index)}
+          >
+            <h4>{faq.question}</h4>
+            {openIndex === index && <p>{faq.answer}</p>}
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

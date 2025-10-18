@@ -124,41 +124,32 @@ function AboutUs() {
       ),
     },
     {
-      name: "Sam Wang",
-      title: "Head Chef",
-      image: "/images/sam.jpg",
+      name: "Leo Lu",
+      title: "CTO",
+      image: "/images/leo.jpg",
       description: (
         <>
           <h5>Education</h5>
           <p>
-            Graduated top of class in Culinary Science & Food Innovation —
-            refined pastry technique meets data-driven flavor design.
+            Got a BS in EE from Backupsmore University, Tainan City, Taiwan.
           </p>
 
           <h5>Experience</h5>
           <ul>
             <li>
-              Founded and scaled <strong>The Snack Shop Co.</strong>, launching
-              12 signature bars and 7 seasonal cookie flavors — averaging 5,000+
-              units sold monthly.
+              <strong>Snack Innovation Consultant, Hooli</strong>{' '} (2020–2022): Helped digitize the art of snacking by leading the “Snack Optimization Initiative,” which used machine learning to predict ideal crunch-to-flavor ratios (with mixed, but delicious, results).
             </li>
             <li>
-              Head pastry chef for pop-up dessert experiences (500+ guests per
-              event), with viral social media features and wholesale deals for
-              local cafés.
+              Designed the prototype for <strong>SnackOS™</strong>{' '} — an AI system that learned users’ snack preferences by watching their webcam reactions during taste tests. Beta testers described it as “unsettlingly accurate.”
             </li>
             <li>
-              Built a hit line of gourmet pretzels & caramel popcorn that
-              doubled repeat purchase rates through clever flavor layering and
-              packaging UX.
+              Collaborated with flavor scientists to launch the{' '} <strong>SmartSnack 2.0</strong> line — chips that paired over Bluetooth to track freshness and crunch acoustics in real time.
             </li>
           </ul>
 
           <h5>Passion</h5>
           <p>
-            I obsess over texture math, flavor symmetry, and repeatable
-            processes — turning bold concepts into snacks that hit emotionally
-            and sell reliably.
+            My time at Hooli taught me that snacks and software share one core principle: <strong> {' '} everything is better after version 2.0. </strong>{' '} I’m passionate about blending data with flavor, using tech to enhance the snack experience — and making sure every bite feels like an upgrade. Whether it’s debugging cookie dough or scaling flavor pipelines, I bring startup energy to every kitchen.
           </p>
         </>
       ),
