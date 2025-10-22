@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Container,
@@ -22,11 +22,8 @@ function Purchase() {
     useEffect(() => {
         const fetchInventory = async () => {
             try {
-                // const response = await fetch(
-                //     'http://localhost:5000/inventory-management/inventory'
-                // );
                 const response = await fetch(
-                    'https://mocki.io/v1/7d628f1a-85e3-4f57-b174-86d2f7616939'
+                    'http://localhost:5000/inventory-management/inventory'
                 );
                 if (!response.ok) throw new Error('Failed to load inventory');
                 const data = await response.json();
