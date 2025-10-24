@@ -30,7 +30,7 @@ function Purchase() {
 
                 const data = await response.json();
 
-                setItems(data.items);
+                setItems(data);
             } catch (err) {
                 setError(err.message);
             } finally {
