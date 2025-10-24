@@ -28,7 +28,7 @@ function ViewOrder() {
 
         try {
             const response = await fetch(
-                'http://localhost:5000/order-processing/order',
+                'https://p7kdoe3seg.execute-api.us-east-1.amazonaws.com/dev/order-processing/order',
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },

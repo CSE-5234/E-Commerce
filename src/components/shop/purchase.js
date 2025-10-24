@@ -23,12 +23,14 @@ function Purchase() {
         const fetchInventory = async () => {
             try {
                 const response = await fetch(
-                    'http://localhost:5000/inventory-management/inventory'
+                    'https://p7kdoe3seg.execute-api.us-east-1.amazonaws.com/dev/inventory-management/inventory'
                 );
+
                 if (!response.ok) throw new Error('Failed to load inventory');
+
                 const data = await response.json();
-                console.log(data);
-                setItems(data);
+
+                setItems(data.items);
             } catch (err) {
                 setError(err.message);
             } finally {
