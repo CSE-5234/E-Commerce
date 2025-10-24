@@ -24,7 +24,7 @@ function ViewOrder() {
 
     const handleConfirm = async () => {
         setLoading(true);
-        setError(''); // you can still keep error state if you want to show inline feedback later
+        setError('');
 
         try {
             const response = await fetch(
@@ -43,7 +43,6 @@ function ViewOrder() {
             const result = await response.json();
 
             if (response.ok && result.confirmationNumber) {
-                // ✅ Success: navigate to confirmation page
                 navigate('/purchase/viewConfirmation', {
                     state: {
                         cartItems,
@@ -53,12 +52,11 @@ function ViewOrder() {
                     },
                 });
             } else {
-                // ❌ Failure: show backend message or default one
                 const message =
                     result.message ||
                     'Order could not be processed. Please try again.';
-                window.alert(message); // show popup alert
-                setError(message); // optional, keeps error state in case you still want inline display
+                window.alert(message);
+                setError(message);
             }
         } catch (err) {
             window.alert('Network error. Please try again later.');
@@ -123,7 +121,7 @@ function ViewOrder() {
                             </p>
                             <p>
                                 <strong>Card Number:</strong> **** **** ****{' '}
-                                {paymentInfo.cardNumber.slice(-4)}
+                                {paymentInfo.cardNumber?.slice(-4)}
                             </p>
                             <p>
                                 <strong>Expiry:</strong>{' '}
@@ -184,7 +182,11 @@ function ViewOrder() {
                     variant="secondary"
                     size="lg"
                     className="me-3"
-                    onClick={() => navigate(-1)}
+                    onClick={() =>
+                        navigate('/purchase/shippingEntry', {
+                            state: { cartItems, paymentInfo, shippingInfo },
+                        })
+                    }
                     disabled={loading}
                 >
                     Edit Shipping
