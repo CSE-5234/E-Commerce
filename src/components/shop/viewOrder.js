@@ -141,8 +141,8 @@ function ViewOrder() {
                   <tr key={index}>
                     <td>{item.name}</td>
                     <td>{item.quantity}</td>
-                    <td>${item.price.toFixed(2)}</td>
-                    <td>${(item.price * item.quantity).toFixed(2)}</td>
+                    <td>${item.unit_price.toFixed(2)}</td>
+                    <td>${(item.unit_price * item.quantity).toFixed(2)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -160,7 +160,7 @@ function ViewOrder() {
           <h4>
             Total: $
             {cartItems
-              .reduce((sum, item) => sum + item.price * item.quantity, 0)
+              .reduce((sum, item) => sum + item.unit_price * item.quantity, 0)
               .toFixed(2)}
           </h4>
         </Card.Body>
