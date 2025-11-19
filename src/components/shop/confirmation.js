@@ -7,12 +7,11 @@ function Confirmation() {
   const navigate = useNavigate();
 
   // get data from previous page
-  const { cartItems, shippingInfo } = location.state || {
+  const { cartItems, shippingInfo, confirmationNumber } = location.state || {
     cartItems: [],
     shippingInfo: {},
+    confirmationNumber: "Unknown",
   };
-
-  const confirmationNumber = "1234567890";
 
   // sum order total
   const totalCost = cartItems.reduce(

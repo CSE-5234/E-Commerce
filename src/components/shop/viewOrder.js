@@ -13,11 +13,68 @@ function ViewOrder() {
 
 	console.log(paymentInfo);
 
-  const handleConfirm = () => {
-    navigate("/purchase/viewConfirmation", {
-      state: { cartItems, paymentInfo, shippingInfo },
-    });
+  const handleConfirm = async() => {
+  const orderPayload = {
+    customerName: shippingInfo.name,
+    customerEmail: shippingInfo.email || null,
+
+    shipping: {
+      addressLine1: shippingInfo.addressLine1,
+      addressLine2: shippingInfo.addressLine2,
+      city: shippingInfo.city,
+      state: shippingInfo.state,
+      postalCode: shippingInfo.zip,
+      country: "USA",
+    },
+
+    payment: {
+      cardNumber: paymentInfo.cardNumber,
+      expirationDate: paymentInfo.expirationDate,
+      cvvCode: paymentInfo.cvvCode || null,
+      cardHolderName: paymentInfo.cardHolderName,
+    },
+
+    items: cartItems.map(item => ({
+      itemId: item.id,
+      itemName: item.name,
+      quantity: item.quantity,
+    })),
   };
+
+  try {
+    const res = await fetch(
+      "https://p7kdoe3seg.execute-api.us-east-1.amazonaws.com/dev/order-processing/order",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderPayload),
+      }
+    );
+
+    if (!res.ok) {
+      console.error("Order failed:", res.status);
+      alert("Order failed. Please try again.");
+      return;
+    }
+
+    const data = await res.json();
+    console.log("Order created:", data);
+
+    //Navigates to the Confirmation Page
+    navigate("/purchase/viewConfirmation", {
+      state: {
+        cartItems,
+        shippingInfo,
+        paymentInfo,
+        confirmationNumber: data.orderToken,  
+        orderId: data.orderId,
+      },
+    });
+  } catch (err) {
+    console.error("Network error submitting order:", err);
+    alert("Network error. Please try again.");
+  }
+};
 
   return (
     <Container className="my-5">
