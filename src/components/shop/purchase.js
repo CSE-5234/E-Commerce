@@ -106,7 +106,7 @@ function Purchase() {
                                         {item.name}
                                     </Card.Title>
                                     <Card.Text className="text-success fw-bold fs-4">
-                                        ${item.price.toFixed(2)}
+                                        ${item.unit_price.toFixed(2)}
                                     </Card.Text>
                                     <Form.Group>
                                         <Form.Label>Quantity:</Form.Label>
