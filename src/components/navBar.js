@@ -6,7 +6,7 @@ export default function Navbar() {
       {/* Black brand block on top */}
       <div className="brand-bar">
         <Link to="/" className="brand-link" aria-label="Go to Home">
-          THE SNACK SHOP
+          ASMC
         </Link>
       </div>
 
